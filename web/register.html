@@ -4,45 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reset Password</title>
+    
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+    color: #4feee9;
+    --Text-color: rgb(255, 0, 0);
+    --Text-color--placeholder: rgba(255,0,200,.7);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+    width: 300px;
+
+}
+fieldset{
+    width: 100%;
+    padding: 5rem;
+    border-radius: 3px;
+    border: 2px solid aqua;
+    box-shadow: 0 0 20px aqua,
+    inset 0 0 20px aqua;
+}
+fieldset legend{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--Text-color);
+    text-shadow: 0 0 10px var(--Text-color--placeholder);
+}
+fieldset input{
+    width: 100%;
+}
+
+
+fieldset input[type="pwd"],input[type="cfmp"],input[type="mail"],input[type="uname"]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #f8c077;
+    background: transparent;
+}
+
+</style>
 <body>
-    <form action="action_page.php">
-        <div class="container">
-          <h1>Register</h1>
-          <p>Please fill in this form to create an account.</p>
-          <hr>
-      
+    <form action="#">
+        <fieldset>
+            <legend> REGISTER </legend>
+            <label for="uname">Username</label>
+            <input type="uname" id="uname" placeholder="JohnnyDang">
 
-          <label for="email"><b>Full name </b></label>
-          <input type="text" placeholder="Enter Name" name="Name" id="Name" required>
+            <label for="mail">Verify Email</label>
+            <input type="mail" id="mail" placeholder="JohnnyDang007@gmail.com">
 
-          <label for="email"><b>Sex </b></label>
-          <input type="text" placeholder="Male / Female" name="sex" id="sex" required>
+            <label for="pwd">Password</label>
+            <input type="pwd" id="pwd" placeholder="*********">
 
-          <label for="email"><b>Phnone Number</b></label>
-          <input type="text" placeholder="Enter Phone number" name="pnb" id="pnb" required>
+            <label for="cfmp">Comfirm Password</label>
+            <input type="cfmp" id="cfmp" placeholder="*********">
 
+            <a href="#">Ready?</a>
+            <input type="submit" value="Create Account">
 
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-
-
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-      
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-          <hr>
-      
-          
-        </div>
-        
-      
-        
-      </form>      
+        </fieldset>
+    </form>
     
 </body>
 </html>
