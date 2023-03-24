@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+    color: #fff;
+    --Text-color: rgb(255,0,200);
+    --Text-color--placeholder: rgba(255,0,200,.7);
+
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+    width: 300px;
+
+}
+fieldset{
+    width: 100%;
+    padding: 5rem;
+    border-radius: 3px;
+    border: 2px solid aqua;
+    box-shadow: 0 0 20px aqua,
+    inset 0 0 20px aqua;
+}
+fieldset legend{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--Text-color);
+    text-shadow: 0 0 10px var(--Text-color--placeholder);
+
+
+}
+fieldset input{
+    width: 100%;
+}
+
+
+fieldset input[type="email"],input[type="password"]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #f8c077;
+    background: transparent;
+}
+    </style>
+    
+</head>
+<link rel="stylesheet" href="/style.css">
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>LOGIN</legend>
+            <label for="Email">Email</label>
+            <input type="email" id="Email" placeholder="example@xample.com">
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" placeholder="password">
+            <a href="#">Forgot password</a>
+            <input type="submit" value="Log in">
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
