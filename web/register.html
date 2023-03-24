@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+    color: #4feee9;
+    --Text-color: rgb(255, 0, 0);
+    --Text-color--placeholder: rgba(255,0,200,.7);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+    width: 300px;
+
+}
+fieldset{
+    width: 100%;
+    padding: 5rem;
+    border-radius: 3px;
+    border: 2px solid aqua;
+    box-shadow: 0 0 20px aqua,
+    inset 0 0 20px aqua;
+}
+fieldset legend{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--Text-color);
+    text-shadow: 0 0 10px var(--Text-color--placeholder);
+}
+fieldset input{
+    width: 100%;
+}
+
+
+fieldset input[type="pwd"],input[type="cfmp"],input[type="mail"],input[type="uname"]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #f8c077;
+    background: transparent;
+}
+
+</style>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend> REGISTER </legend>
+            <label for="uname">Username</label>
+            <input type="uname" id="uname" placeholder="JohnnyDang">
+
+            <label for="mail">Verify Email</label>
+            <input type="mail" id="mail" placeholder="JohnnyDang007@gmail.com">
+
+            <label for="pwd">Password</label>
+            <input type="pwd" id="pwd" placeholder="*********">
+
+            <label for="cfmp">Comfirm Password</label>
+            <input type="cfmp" id="cfmp" placeholder="*********">
+
+            <a href="#">Ready?</a>
+            <input type="submit" value="Create Account">
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
